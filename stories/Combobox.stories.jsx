@@ -84,7 +84,7 @@ const DefaultCombobox = (args) => {
 										{({ selected, active }) => (
 											<>
 												<span
-													className={`block truncate ${
+													className={`block truncate text-sm ${
 														selected ? "font-medium" : "font-normal"
 													}`}
 												>

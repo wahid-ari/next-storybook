@@ -26,7 +26,7 @@ const SuccessLeftAlertCompact = (args) => <AlertCompact.successLeft {...args} />
 const WarningLeftAlertCompact = (args) => <AlertCompact.warningLeft {...args} />;
 const DangerLeftAlertCompact = (args) => <AlertCompact.dangerLeft {...args} />;
 const AlertsCompact = (args) => (
-	<div className="grid grid-cols-2 gap-4">
+	<div className="grid sm:grid-cols-2 gap-4">
 		<AlertCompact {...args} />
 		<AlertCompact.success {...args} />
 		<AlertCompact.warning {...args} />

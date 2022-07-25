@@ -35,7 +35,7 @@ const DefaultListbox = (args) => {
 			<Listbox value={selected} onChange={setSelected}>
 				<div className="relative mt-1">
 					<Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md sm:text-sm">
-						<span className="block truncate">{selected.name}</span>
+						<span className="block truncate text-sm">{selected.name}</span>
 						<span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
 							<SelectorIcon
 								className="h-5 w-5 text-gray-400"
@@ -63,7 +63,7 @@ const DefaultListbox = (args) => {
 									{({ selected }) => (
 										<>
 											<span
-												className={`block truncate ${
+												className={`block truncate text-sm ${
 													selected ? "font-medium" : "font-normal"
 												}`}
 											>

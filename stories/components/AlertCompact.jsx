@@ -20,7 +20,7 @@ export default function AlertCompact({ className, title, children }) {
 				<InformationCircleIcon className="w-7 h-7 text-white" />
 			</div>
 			<div className="py-1.5 px-3 ">
-				<p className="text-sky-500 font-medium text-base">{title}</p>
+				<p className="text-sky-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -36,7 +36,7 @@ AlertCompact.success = ({ className, title, children }) => {
 				<CheckCircleIcon className="w-7 h-7 text-white" />
 			</div>
 			<div className="py-1.5 px-3 ">
-				<p className="text-emerald-500 font-medium text-base">{title}</p>
+				<p className="text-emerald-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -52,7 +52,7 @@ AlertCompact.warning = ({ className, title, children }) => {
 				<ExclamationIcon className="w-7 h-7 text-white" />
 			</div>
 			<div className="py-1.5 px-3 ">
-				<p className="text-yellow-500 font-medium text-base">{title}</p>
+				<p className="text-yellow-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ AlertCompact.danger = ({ className, title, children }) => {
 				<ExclamationCircleIcon className="w-7 h-7 text-white" />
 			</div>
 			<div className="py-1.5 px-3 ">
-				<p className="text-red-500 font-medium text-base">{title}</p>
+				<p className="text-red-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -81,7 +81,7 @@ AlertCompact.infoLeft = ({ className, title, children }) => {
 			className={`${className} border-l-8 border-sky-500 rounded-md shadow-md max-w-xs dark:bg-[#202020]`}
 		>
 			<div className="py-1.5 px-3 ">
-				<p className="text-sky-500 font-medium text-base">{title}</p>
+				<p className="text-sky-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -94,7 +94,7 @@ AlertCompact.successLeft = ({ className, title, children }) => {
 			className={`${className} border-l-8 border-emerald-500 rounded-md shadow-md max-w-xs dark:bg-[#202020]`}
 		>
 			<div className="py-1.5 px-3 ">
-				<p className="text-emerald-500 font-medium text-base">{title}</p>
+				<p className="text-emerald-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -107,7 +107,7 @@ AlertCompact.warningLeft = ({ className, title, children }) => {
 			className={`${className} border-l-8 border-yellow-500 rounded-md shadow-md max-w-xs dark:bg-[#202020]`}
 		>
 			<div className="py-1.5 px-3 ">
-				<p className="text-yellow-500 font-medium text-base">{title}</p>
+				<p className="text-yellow-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>
@@ -120,7 +120,7 @@ AlertCompact.dangerLeft = ({ className, title, children }) => {
 			className={`${className} border-l-8 border-red-500 rounded-md shadow-md max-w-xs dark:bg-[#202020]`}
 		>
 			<div className="py-1.5 px-3 ">
-				<p className="text-red-500 font-medium text-base">{title}</p>
+				<p className="text-red-500 font-medium text-sm">{title}</p>
 				<p className="text-neutral-600 dark:text-gray-200">{children}</p>
 			</div>
 		</div>

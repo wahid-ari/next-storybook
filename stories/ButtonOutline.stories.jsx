@@ -25,7 +25,7 @@ const RedButtonOutline = (args) => <ButtonOutline.red {...args} />;
 const PurpleButtonOutline = (args) => <ButtonOutline.purple {...args} />;
 const DarkButtonOutline = (args) => <ButtonOutline.dark {...args} />;
 const ButtonsOutline = (args) => (
-	<div className="flex gap-4">
+	<div className="flex flex-wrap gap-4">
 		<ButtonOutline {...args} />
 		<ButtonOutline.green {...args} />
 		<ButtonOutline.yellow {...args} />

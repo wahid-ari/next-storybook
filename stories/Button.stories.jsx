@@ -26,7 +26,7 @@ const RedButton = (args) => <Button.red {...args} />;
 const PurpleButton = (args) => <Button.purple {...args} />;
 const DarkButton = (args) => <Button.dark {...args} />;
 const Buttons = (args) => (
-	<div className="flex gap-4">
+	<div className="flex flex-wrap gap-4">
 		<Button {...args} />
 		<Button.secondary {...args} />
 		<Button.green {...args} />

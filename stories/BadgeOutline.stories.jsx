@@ -25,7 +25,7 @@ const RedBadgeOutline = (args) => <BadgeOutline.red {...args} />;
 const PurpleBadgeOutline = (args) => <BadgeOutline.purple {...args} />;
 const DarkBadgeOutline = (args) => <BadgeOutline.dark {...args} />;
 const BadgesOutline = (args) => (
-	<div className="flex gap-4">
+	<div className="flex flex-wrap gap-4">
 		<BadgeOutline {...args} />
 		<BadgeOutline.green {...args} />
 		<BadgeOutline.yellow {...args} />

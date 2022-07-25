@@ -54,7 +54,7 @@ export default {
 const DefaultIcon = (args) => <BadgeCheckIcon {...args} />;
 const ExampleIcon = (args) => (
 	<>
-		<div className="flex gap-3 flex-wrap w-80">
+		<div className="flex gap-3 flex-wrap sm:w-80">
 			<BadgeCheckIcon {...args} />
 			<AcademicCapIcon {...args} />
 			<AdjustmentsIcon {...args} />

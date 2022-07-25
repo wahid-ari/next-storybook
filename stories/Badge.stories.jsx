@@ -25,7 +25,7 @@ const RedBadge = (args) => <Badge.red {...args} />;
 const PurpleBadge = (args) => <Badge.purple {...args} />;
 const DarkBadge = (args) => <Badge.dark {...args} />;
 const Badges = (args) => (
-	<div className="flex gap-4">
+	<div className="flex flex-wrap gap-4">
 		<Badge {...args} />
 		<Badge.green {...args} />
 		<Badge.yellow {...args} />

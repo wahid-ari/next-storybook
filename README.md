@@ -1,5 +1,11 @@
 npx sb init --type react
 
+## Deploying on Vercel
+To deploy on Vercel, you need to create a separate deployment with your Next.js page, then add this custom configuration
+Framework Preset = Other
+Build Command = yarn build-storybook
+Output Directory = storybook-static
+
 # Next.JS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

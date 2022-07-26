@@ -9,6 +9,16 @@ Build Command = yarn build-storybook
 
 Output Directory = storybook-static
 
+## Deploying on Chromatic
+run `yarn chromatic` to build and push to chromatic directly from text editor.
+
+live site : 
+https://62df9bd2e549629f832ec01c-vvspscpohx.chromatic.com/
+
+### Automate Chromatic Deployment with GitHub Actions
+
+https://www.chromatic.com/docs/github-actions
+
 # Next.JS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

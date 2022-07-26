@@ -45,9 +45,9 @@ const DefaultCombobox = (args) => {
 		<div className="mx-auto w-72 py-8">
 			<Combobox value={selected} onChange={setSelected}>
 				<div className="relative mt-1">
-					<div className="relative w-full cursor-pointer overflow-hidden rounded-lg bg-white text-left shadow-md sm:text-sm">
+					<div className="relative w-full cursor-pointer overflow-hidden rounded-lg text-left shadow-md sm:text-sm">
 						<Combobox.Input
-							className="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0"
+							className="w-full border-none py-2 pl-3 pr-10 text-sm dark:bg-neutral-800 text-gray-900 dark:text-white"
 							displayValue={(color) => color.name}
 							onChange={(event) => setQuery(event.target.value)}
 						/>
@@ -65,9 +65,9 @@ const DefaultCombobox = (args) => {
 						leaveTo="opacity-0"
 						afterLeave={() => setQuery("")}
 					>
-						<Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg sm:text-sm">
+						<Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-neutral-800 py-1 text-base shadow-lg sm:text-sm">
 							{filteredColors.length === 0 && query !== "" ? (
-								<div className="relative cursor-pointer select-none py-2 px-4 text-gray-700">
+								<div className="relative cursor-pointer select-none py-2 px-4 text-gray-700 dark:text-gray-300 text-sm">
 									Nothing found.
 								</div>
 							) : (
@@ -76,7 +76,7 @@ const DefaultCombobox = (args) => {
 										key={color.id}
 										className={({ active }) =>
 											`relative cursor-pointer select-none py-2 pl-10 pr-4 ${
-												active ? "bg-teal-600 text-white" : "text-gray-900"
+												active ? "bg-teal-600 text-white" : "text-gray-900 dark:text-white"
 											}`
 										}
 										value={color}

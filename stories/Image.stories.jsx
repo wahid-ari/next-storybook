@@ -21,7 +21,7 @@ Image.displayName = "Image";
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const DefaultImage = (args) => (
-	<div className="relative h-44 sm:h-56 sm:w-80">
+	<div className="relative h-44 w-64 sm:h-56 sm:w-80">
 		<Image
 			alt="Image"
 			src="https://images.unsplash.com/photo-1658165928995-d15d058bd42b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80"

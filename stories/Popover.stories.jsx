@@ -122,39 +122,39 @@ const DefaultPopover = (args) => {
 							leaveTo="opacity-0 translate-y-1"
 						>
 							<Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
-								<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-									<div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+								<div className="overflow-hidden rounded-lg shadow-lg">
+									<div className="relative grid gap-8 bg-white dark:bg-neutral-800 p-7 lg:grid-cols-2">
 										{solutions.map((item) => (
 											<a
 												key={item.name}
 												href={item.href}
-												className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50"
+												className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700"
 											>
 												<div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
 													<item.icon aria-hidden="true" />
 												</div>
 												<div className="ml-4">
-													<p className="text-sm font-medium text-gray-900">
+													<p className="text-sm font-medium text-gray-900 dark:text-white">
 														{item.name}
 													</p>
-													<p className="text-sm text-gray-500">
+													<p className="text-sm text-gray-500 dark:text-gray-400">
 														{item.description}
 													</p>
 												</div>
 											</a>
 										))}
 									</div>
-									<div className="bg-gray-50 px-4 pb-4">
+									<div className="bg-gray-50 dark:bg-neutral-800 px-4 pb-4">
 										<a
 											href="##"
-											className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100"
+											className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-neutral-700"
 										>
 											<span className="flex items-center">
-												<span className="text-sm font-medium text-gray-900">
+												<span className="text-sm font-medium text-gray-900 dark:text-white">
 													Documentation
 												</span>
 											</span>
-											<span className="block text-sm text-gray-500">
+											<span className="block text-sm text-gray-500 dark:text-gray-400">
 												Start integrating products and tools
 											</span>
 										</a>

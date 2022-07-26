@@ -46,7 +46,7 @@ Badge.dark.displayName = "Badge.dark";
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const AllBadge = Badges.bind({});
 AllBadge.args = {
-	children: "Badge Text",
+	children: "Badge",
 };
 
 export const Default = DefaultBadge.bind({});

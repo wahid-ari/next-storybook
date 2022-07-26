@@ -47,7 +47,7 @@ LinkButtonOutline.dark.displayName = "LinkButtonOutline.dark";
 export const AllLinkButtonOutline = LinkButtonOutlines.bind({});
 AllLinkButtonOutline.args = {
 	href: "#",
-	children: "Link Button",
+	children: "Link Button Outline",
 };
 
 export const NewTab = DefaultLinkButtonOutline.bind({});

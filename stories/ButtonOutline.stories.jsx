@@ -46,7 +46,7 @@ ButtonOutline.dark.displayName = "ButtonOutline.dark";
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const AllButtonOutline = ButtonsOutline.bind({});
 AllButtonOutline.args = {
-	children: "Button",
+	children: "Button Outline",
 };
 
 export const DefaultOutline = DefaultButtonOutline.bind({});

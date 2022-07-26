@@ -55,7 +55,7 @@ const DefaultRadioGroup = (args) => {
 								value={plan}
 								className={({ checked }) =>
 									`${
-										checked ? "bg-teal-600 text-white" : "bg-white"
+										checked ? "bg-teal-600 text-white" : "bg-white dark:bg-neutral-800"
 									} relative flex cursor-pointer rounded-lg px-5 py-4 shadow focus:outline-none`
 								}
 							>
@@ -67,7 +67,7 @@ const DefaultRadioGroup = (args) => {
 													<RadioGroup.Label
 														as="p"
 														className={`font-medium  ${
-															checked ? "text-white" : "text-gray-900"
+															checked ? "text-white" : "text-gray-900 dark:text-white"
 														}`}
 													>
 														{plan.name}
@@ -75,7 +75,7 @@ const DefaultRadioGroup = (args) => {
 													<RadioGroup.Description
 														as="span"
 														className={`inline ${
-															checked ? "text-teal-100" : "text-gray-500"
+															checked ? "text-teal-100" : "text-gray-500 dark:text-gray-400"
 														}`}
 													>
 														<span>{plan.ram} / </span>

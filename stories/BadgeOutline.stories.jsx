@@ -46,7 +46,7 @@ BadgeOutline.dark.displayName = "BadgeOutline.dark";
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const AllBadgeOutline = BadgesOutline.bind({});
 AllBadgeOutline.args = {
-	children: "Badge",
+	children: "Badge Outline",
 };
 
 export const DefaultOutline = DefaultBadgeOutline.bind({});

@@ -76,7 +76,9 @@ const DefaultCombobox = (args) => {
 										key={color.id}
 										className={({ active }) =>
 											`relative cursor-pointer select-none py-2 pl-10 pr-4 ${
-												active ? "bg-teal-600 text-white" : "text-gray-900 dark:text-white"
+												active
+													? "bg-teal-600 text-white"
+													: "text-gray-900 dark:text-white"
 											}`
 										}
 										value={color}

@@ -23,15 +23,15 @@ const ProgressAll = (args) => (
 	<div>
 		<Progress {...args} />
 		<br />
-		<Progress {...args} height="h-1.5" />
+		<Progress {...args} height="h-1.5" progressClassName="bg-red-500" />
 		<br />
-		<Progress {...args} height="h-2" />
+		<Progress {...args} height="h-2" progressClassName="bg-orange-500" />
 		<br />
-		<Progress {...args} height="h-2.5" />
+		<Progress {...args} height="h-2.5" progressClassName="bg-teal-500" />
 		<br />
-		<Progress {...args} height="h-3" />
+		<Progress {...args} height="h-3" progressClassName="bg-violet-500" />
 		<br />
-		<Progress.percentage {...args} />
+		<Progress.percentage {...args} progressClassName="bg-green-500" />
 	</div>
 );
 
@@ -46,6 +46,8 @@ AllProgress.args = {
 export const Default = DefaultProgress.bind({});
 Default.args = {
 	percent: "50",
+	progressClassName: "bg-teal-500",
+	height: "h-1.5",
 };
 
 export const Height1_5 = DefaultProgress.bind({});

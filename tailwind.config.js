@@ -11,6 +11,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    require("tailwind-scrollbar"), 
     require('@tailwindcss/forms'),
   ],
   //fix some tailwindcss className missing in JIT reload change

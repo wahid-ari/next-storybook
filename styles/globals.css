@@ -10,3 +10,11 @@ body {
 	overflow-x: hidden;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+/* SCROLLBAR CUSTOM  */
+.scrollbar-track-rounded::-webkit-scrollbar-track {
+	border-radius: 999px;
+}
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+	border-radius: 999px;
+}

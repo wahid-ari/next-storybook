@@ -21,6 +21,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.3.0",
     "react-loading-skeleton": "^3.1.0",
+    "react-pin-field": "^3.0.16",
     "react-use": "^17.4.0"
   },
   "devDependencies": {

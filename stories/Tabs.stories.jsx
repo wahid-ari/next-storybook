@@ -207,6 +207,58 @@ const FourthTabs = (args) => {
 	);
 };
 
+const FiveTabs = (args) => {
+	return (
+		<div className="w-full max-w-md px-2 mx-auto sm:px-0 py-8">
+			<Tab.Group>
+				<Tab.List className="flex font-medium whitespace-nowrap border-b-2 border-gray-200 dark:border-neutral-700">
+					<div className="-mb-[0.08rem]">
+						<Tab
+							className={({ selected }) =>
+								classNames(
+									"w-full mr-4 py-2 text-sm font-medium -mb-[0.06rem] transition-all rounded-t-md",
+									"text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200",
+									"border-2 border-transparent",
+									selected
+										? "!text-teal-500 border-x-2 border-t-2 border-x-gray-200 border-t-gray-200 border-b-white dark:border-neutral-700 dark:border-b-neutral-900"
+										: ""
+								)
+							}
+						>
+							First
+						</Tab>
+						<Tab
+							className={({ selected }) =>
+								classNames(
+									"w-full mr-4 py-2 text-sm font-medium -mb-[0.06rem] transition-all rounded-t-md",
+									"text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200",
+									"border-2 border-transparent",
+									selected
+										? "!text-teal-500 border-x-2 border-t-2 border-x-gray-200 border-t-gray-200 border-b-white dark:border-neutral-700 dark:border-b-neutral-900"
+										: ""
+								)
+							}
+						>
+							Second
+						</Tab>
+					</div>
+				</Tab.List>
+				<Tab.Panels className="mt-2">
+					<Tab.Panel className="rounded-xl p-3 dark:text-white">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+						tempore temporibus.
+					</Tab.Panel>
+					<Tab.Panel className="rounded-xl p-3 dark:text-white">
+						Doloremque quos fuga nisi cum impedit deleniti quis quae esse
+						excepturi dicta voluptatum odio fugit magni laudantium soluta
+						voluptatibus.
+					</Tab.Panel>
+				</Tab.Panels>
+			</Tab.Group>
+		</div>
+	);
+};
+
 const VerticalTabs = (args) => {
 	return (
 		<div className="pt-4 sm:px-0 sm:flex">
@@ -322,5 +374,6 @@ export const Default = DefaultTabs.bind({});
 export const Second = SecondTabs.bind({});
 export const Third = ThirdTabs.bind({});
 export const Fourth = FourthTabs.bind({});
+export const Five = FiveTabs.bind({});
 export const Vertical = VerticalTabs.bind({});
 export const VerticalStyle = VerticalStyleTabs.bind({});

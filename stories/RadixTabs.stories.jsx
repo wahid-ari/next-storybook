@@ -2,6 +2,7 @@ import React from "react";
 
 import * as Tabs from "@radix-ui/react-tabs";
 import cx from "classnames";
+import Text from "./components/Text"
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -35,43 +36,49 @@ const DefaultRadixTabs = (args) => {
 		},
 	];
 	return (
-		<Tabs.Root defaultValue="tab1">
-			<Tabs.List className="flex space-x-5 max-w-sm">
-				{tabs.map(({ title, value }) => (
-					<Tabs.Trigger
-						key={`tab-trigger-${value}`}
+		<>
+			<Text className="mb-4">
+				A set of layered sections of content—known as tab panels—that are
+				displayed one at a time.
+			</Text>
+			<Tabs.Root defaultValue="tab1">
+				<Tabs.List className="flex space-x-5 max-w-sm">
+					{tabs.map(({ title, value }) => (
+						<Tabs.Trigger
+							key={`tab-trigger-${value}`}
+							value={value}
+							className={cx(
+								"group",
+								"py-2 transition-all duration-200",
+								"radix-state-active:border-b-2 radix-state-active:border-blue-500 radix-state-active:text-blue-500",
+								"radix-state-inactive:border-b-2 radix-state-inactive:border-b-transparent",
+								"radix-state-inactive:text-gray-600 dark:radix-state-inactive:text-gray-300",
+								"radix-state-inactive:hover:text-blue-500 radix-state-inactive:dark:hover:text-blue-500"
+							)}
+						>
+							<span className="text-sm font-medium">{title}</span>
+						</Tabs.Trigger>
+					))}
+				</Tabs.List>
+				{tabs.map(({ value }) => (
+					<Tabs.Content
+						key={`tab-content-${value}`}
 						value={value}
-						className={cx(
-							"group",
-							"py-2 transition-all duration-200",
-							"radix-state-active:border-b-2 radix-state-active:border-blue-500 radix-state-active:text-blue-500",
-							"radix-state-inactive:border-b-2 radix-state-inactive:border-b-transparent",
-							"radix-state-inactive:text-gray-600 dark:radix-state-inactive:text-gray-300",
-							"radix-state-inactive:hover:text-blue-500 radix-state-inactive:dark:hover:text-blue-500"
-						)}
+						className="py-4 max-w-sm"
 					>
-						<span className="text-sm font-medium">{title}</span>
-					</Tabs.Trigger>
-				))}
-			</Tabs.List>
-			{tabs.map(({ value }) => (
-				<Tabs.Content
-					key={`tab-content-${value}`}
-					value={value}
-					className="py-4 max-w-sm"
-				>
-					<span className="text-sm text-gray-700 dark:text-gray-100">
-						{
+						<span className="text-sm text-gray-700 dark:text-gray-100">
 							{
-								tab1: "Laboris voluptate sunt labore et proident cupidatat voluptate eu officia aliquip est irure Lorem sit. Ad est irure non magna aliquip dolore esse.",
-								tab2: "Non labore ullamco pariatur consectetur officia fugiat veniam proident laboris incididunt labore. Aliqua occaecat veniam eu commodo et et exercitation.",
-								tab3: "Anim sunt cupidatat aliquip mollit aliqua cillum anim proident minim do ut quis quis proident. Ullamco occaecat anim pariatur Lorem irure cillum pariatur aute nostrud ut et nulla non sunt.",
-							}[value]
-						}
-					</span>
-				</Tabs.Content>
-			))}
-		</Tabs.Root>
+								{
+									tab1: "Laboris voluptate sunt labore et proident cupidatat voluptate eu officia aliquip est irure Lorem sit. Ad est irure non magna aliquip dolore esse.",
+									tab2: "Non labore ullamco pariatur consectetur officia fugiat veniam proident laboris incididunt labore. Aliqua occaecat veniam eu commodo et et exercitation.",
+									tab3: "Anim sunt cupidatat aliquip mollit aliqua cillum anim proident minim do ut quis quis proident. Ullamco occaecat anim pariatur Lorem irure cillum pariatur aute nostrud ut et nulla non sunt.",
+								}[value]
+							}
+						</span>
+					</Tabs.Content>
+				))}
+			</Tabs.Root>
+		</>
 	);
 };
 

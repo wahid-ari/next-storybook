@@ -20,9 +20,10 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const DefaultRadixSlider = (args) => {
-	const [slider, setSlider] = useState([50]);
+	const [slider, setSlider] = useState([args.value]);
 	return (
 		<>
+			<Text className="mb-4">An input where the user selects a value from within a given range.</Text>
 			<Text className="mb-2">{slider}</Text>
 			<Slider.Root
 				onValueChange={(e) => setSlider(e)}
@@ -54,3 +55,6 @@ Slider.Root.displayName = "Slider.Root";
 
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default = DefaultRadixSlider.bind({});
+Default.args = {
+	value: 50,
+};

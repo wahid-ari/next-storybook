@@ -23,6 +23,7 @@ const DefaultRadixSwitch = (args) => {
 	const [switchValue, setSwitchValue] = useState(false);
 	return (
 		<>
+			<Text className="mb-4">A control that allows the user to toggle between checked and not checked.</Text>
 			<Text className="mb-2">{switchValue ? "On" : "Off"}</Text>
 			<Switch.Root
 				onCheckedChange={(e) => setSwitchValue(e)}

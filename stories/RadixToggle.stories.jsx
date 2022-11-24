@@ -24,6 +24,7 @@ const DefaultRadixToggle = (args) => {
 	const [starred, setStarred] = useState(false);
 	return (
 		<>
+			<Text className="mb-4">A two-state button that can be either on or off.</Text>
 			<Text className="mb-2">{starred ? "starred" : "not starred"}</Text>
 			<Toggle.Root
 				defaultPressed={starred}

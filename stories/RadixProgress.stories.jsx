@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import * as Progress from "@radix-ui/react-progress";
+import Text from "./components/Text";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -18,9 +19,10 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const DefaultRadixProgress = (args) => {
-	const [progress, setProgress] = useState(60);
+	const [progress, setProgress] = useState(args.progress);
 	return (
 		<>
+			<Text className="mb-4">Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</Text>
 			<Progress.Root
 				value={progress}
 				className="h-2 max-w-sm overflow-hidden rounded-full bg-gray-100 dark:bg-neutral-800"
@@ -42,3 +44,6 @@ Progress.Root.displayName = "Progress.Root";
 
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default = DefaultRadixProgress.bind({});
+Default.args = {
+	progress: 50,
+};

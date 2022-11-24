@@ -13,7 +13,7 @@ Output Directory = storybook-static
 run `yarn chromatic` to build and push to chromatic directly from text editor.
 
 live site : 
-https://62df9bd2e549629f832ec01c-vvspscpohx.chromatic.com/
+https://62df9bd2e549629f832ec01c-ofuqcbofte.chromatic.com
 
 ### Automate Chromatic Deployment with GitHub Actions
 

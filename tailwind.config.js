@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     require("tailwind-scrollbar"), 
     require('@tailwindcss/forms'),
+    require("tailwindcss-radix")(),
   ],
   //fix some tailwindcss className missing in JIT reload change
   // its make slow down in building entries

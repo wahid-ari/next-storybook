@@ -13,7 +13,7 @@ export default function Snippet({ className, text }) {
         setCopy(false)
       }, 2500)
     } catch (err) {
-      console.log(err)
+      console.error(err)
     }
   }
 

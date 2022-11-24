@@ -11,6 +11,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     'storybook-dark-mode',
+    "storybook-css-modules",
     // postCssLoader,
     // {
     //   /**

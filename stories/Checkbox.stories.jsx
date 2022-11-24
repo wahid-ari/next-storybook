@@ -68,7 +68,7 @@ const DefaultCheckbox = (args) => {
 const CheckedCheckbox = (args) => {
 	const [checkedColor, setCheckedColor] = useState(["yellow", "pink"]);
 	function handleCheckedCheckboxChange(e) {
-		console.log(e);
+		// console.log(e);
 		e.persist();
 		if (e.target.checked) {
 			setCheckedColor([...checkedColor, e.target.value]);
